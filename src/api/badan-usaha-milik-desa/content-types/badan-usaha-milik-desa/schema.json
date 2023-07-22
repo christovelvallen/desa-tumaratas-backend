@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "badan_usaha_milik_desas",
+  "info": {
+    "singularName": "badan-usaha-milik-desa",
+    "pluralName": "badan-usaha-milik-desas",
+    "displayName": "Lembaga - Badan Usaha Milik Desa (BUMDES)",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jabatan": {
+      "type": "string"
+    },
+    "perangkat": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profil-perangkat-desa.profil-perangkat-desa"
+    }
+  }
+}

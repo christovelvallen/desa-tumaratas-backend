@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "apbdesas",
+  "info": {
+    "singularName": "apbdesa",
+    "pluralName": "apbdesas",
+    "displayName": "APBDES",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tahun": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

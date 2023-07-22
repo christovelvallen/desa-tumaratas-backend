@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "profil_perangkat_desas",
+  "info": {
+    "singularName": "profil-perangkat-desa",
+    "pluralName": "profil-perangkat-desas",
+    "displayName": "Profil Perangkat Desa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string",
+      "required": true
+    },
+    "tempatLahir": {
+      "type": "string"
+    },
+    "tanggalLahir": {
+      "type": "date"
+    },
+    "alamat": {
+      "type": "text"
+    },
+    "agama": {
+      "type": "enumeration",
+      "enum": [
+        "Kristen Protestan",
+        "Kristen Katolik",
+        "Islam",
+        "Hindu",
+        "Budha",
+        "Khonghucu"
+      ]
+    },
+    "jenisKelamin": {
+      "type": "enumeration",
+      "enum": [
+        "Laki-laki",
+        "Perempuan"
+      ]
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Sudah Menikah",
+        "Belum Menikah"
+      ]
+    },
+    "pendidikan": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "noTelepon": {
+      "type": "biginteger"
+    },
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "riwayatPendidikan": {
+      "type": "richtext"
+    },
+    "riwayatPekerjaan": {
+      "type": "richtext"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pemerintahan_desas",
+  "info": {
+    "singularName": "pemerintahan-desa",
+    "pluralName": "pemerintahan-desas",
+    "displayName": "Pemerintahan Desa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jabatan": {
+      "type": "string"
+    },
+    "perangkat": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profil-perangkat-desa.profil-perangkat-desa"
+    }
+  }
+}

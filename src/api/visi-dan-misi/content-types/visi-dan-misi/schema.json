@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "visi_dan_misis",
+  "info": {
+    "singularName": "visi-dan-misi",
+    "pluralName": "visi-dan-misis",
+    "displayName": "Visi dan Misi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "visi": {
+      "type": "richtext"
+    },
+    "misi": {
+      "type": "richtext"
+    }
+  }
+}

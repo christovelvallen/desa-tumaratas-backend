@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "statistik_penduduks",
+  "info": {
+    "singularName": "statistik-penduduk",
+    "pluralName": "statistik-penduduks",
+    "displayName": "Statistik Penduduk",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "keterangan": {
+      "type": "string"
+    },
+    "data": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::data-penduduk.data-penduduk",
+      "mappedBy": "keterangan"
+    }
+  }
+}

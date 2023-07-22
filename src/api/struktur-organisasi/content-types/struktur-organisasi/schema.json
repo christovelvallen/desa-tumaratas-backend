@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "struktur_organisasis",
+  "info": {
+    "singularName": "struktur-organisasi",
+    "pluralName": "struktur-organisasis",
+    "displayName": "Struktur Organisasi"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "foto": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

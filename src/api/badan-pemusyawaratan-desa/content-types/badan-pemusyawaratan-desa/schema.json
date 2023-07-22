@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "badan_pemusyawaratan_desas",
+  "info": {
+    "singularName": "badan-pemusyawaratan-desa",
+    "pluralName": "badan-pemusyawaratan-desas",
+    "displayName": "Lembaga - Badan Pemusyawaratan Desa (BPD)",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jabatan": {
+      "type": "string"
+    },
+    "perangkat": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profil-perangkat-desa.profil-perangkat-desa"
+    }
+  }
+}

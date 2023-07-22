@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "infrastruktur_desas",
+  "info": {
+    "singularName": "infrastruktur-desa",
+    "pluralName": "infrastruktur-desas",
+    "displayName": "Infrastruktur Desa"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "jumlah": {
+      "type": "string"
+    },
+    "sarana_dan_prasarana": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::sarana-dan-prasarana.sarana-dan-prasarana",
+      "inversedBy": "infrastruktur_desa"
+    }
+  }
+}

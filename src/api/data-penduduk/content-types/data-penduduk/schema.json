@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "data_penduduks",
+  "info": {
+    "singularName": "data-penduduk",
+    "pluralName": "data-penduduks",
+    "displayName": "Data Penduduk"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nama": {
+      "type": "string"
+    },
+    "jumlah": {
+      "type": "biginteger"
+    },
+    "keterangan": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::statistik-penduduk.statistik-penduduk",
+      "inversedBy": "data"
+    }
+  }
+}

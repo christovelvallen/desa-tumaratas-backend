@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "potensi_desas",
+  "info": {
+    "singularName": "potensi-desa",
+    "pluralName": "potensi-desas",
+    "displayName": "Potensi Desa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "hortikultura": {
+      "type": "richtext"
+    },
+    "wisataAlam": {
+      "type": "richtext"
+    }
+  }
+}

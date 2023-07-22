@@ -1,0 +1,71 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pembangunan_desas",
+  "info": {
+    "singularName": "pembangunan-desa",
+    "pluralName": "pembangunan-desas",
+    "displayName": "Pembangunan Desa",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tanggal": {
+      "type": "date",
+      "required": true
+    },
+    "banner": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "keterangan": {
+      "type": "richtext",
+      "required": false
+    },
+    "jenisKegiatan": {
+      "type": "string",
+      "required": true
+    },
+    "anggaran": {
+      "type": "string"
+    },
+    "volume": {
+      "type": "string"
+    },
+    "lokasi": {
+      "type": "string"
+    },
+    "sumberDana": {
+      "type": "string"
+    },
+    "pelaksanaKegiatan": {
+      "type": "string"
+    },
+    "bidang": {
+      "type": "string"
+    },
+    "fotoDokumentasi": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tahunAnggaran": {
+      "type": "string"
+    }
+  }
+}

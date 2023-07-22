@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sarana_dan_prasaranas",
+  "info": {
+    "singularName": "sarana-dan-prasarana",
+    "pluralName": "sarana-dan-prasaranas",
+    "displayName": "Sarana dan Prasarana",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jenis": {
+      "type": "string"
+    },
+    "infrastruktur_desa": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::infrastruktur-desa.infrastruktur-desa",
+      "mappedBy": "sarana_dan_prasarana"
+    }
+  }
+}

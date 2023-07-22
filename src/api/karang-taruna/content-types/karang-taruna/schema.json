@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "karang_tarunas",
+  "info": {
+    "singularName": "karang-taruna",
+    "pluralName": "karang-tarunas",
+    "displayName": "Lembaga - Karang Taruna",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "jabatan": {
+      "type": "string"
+    },
+    "perangkat": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::profil-perangkat-desa.profil-perangkat-desa"
+    }
+  }
+}
